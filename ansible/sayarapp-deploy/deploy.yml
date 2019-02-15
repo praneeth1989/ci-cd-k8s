@@ -5,8 +5,8 @@
     imageTag: ""
   #remote_user: ansible
     #become: true
-    gather_facts: no
-    connection: local
+  gather_facts: no
+  connection: local
   tasks:
     - name: Create Namespace {{ Namespace }}
       command: "kubectl create namespace {{ Namespace }}"
